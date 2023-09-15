@@ -1,0 +1,19 @@
+.countries-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+}
+.visited{
+    background-color: bisque;
+}
+
+@media screen and (max-width:640px) {
+    .countries-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width:641px) and (max-width:770px) {
+    .countries-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
